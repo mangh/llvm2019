@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" ?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="llvm2019.36c7e004-3301-41f5-a2bf-06d018b89040" Version="1.0" Language="en-US" Publisher="Marek Aniola" />
+        <DisplayName>llvm2019</DisplayName>
+        <Description xml:space="preserve">Allows the LLVM Compiler Toolchain (installed separately) to be used from within Visual Studio 2019 (only) to build C/C++ Projects.</Description>
+        <MoreInfo>https://github.com/mangh/llvm2019</MoreInfo>
+        <License>license.txt</License>
+        <Icon>llvm2019.png</Icon>
+    </Metadata>
+    <Installation AllUsers="true">
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0, 17.0)" />
+        <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[16.0,17.0)" />
+        <InstallationTarget Id="Microsoft.VisualStudio.Enterprise" Version="[16.0,17.0)" />
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    </Dependencies>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,17.0)" DisplayName="Visual Studio core editor" />
+        <Prerequisite Id="Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core" Version="[16.0,17.0)" DisplayName="C++ core desktop features" />
+        <Prerequisite Id="Microsoft.VisualStudio.Component.VC.CoreIde" Version="[16.0,17.0)" DisplayName="C++ core features" />
+    </Prerequisites>
+</PackageManifest>
