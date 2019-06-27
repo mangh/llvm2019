@@ -3,7 +3,7 @@ Allows the LLVM Compiler Toolchain (installed separately) to be used from within
 
 This is a (slighly) modified version of the extension as published under [llvm-project](https://github.com/llvm/llvm-project) (folder llvm/tools/msbuild) for Visual Studio 2017.
 
-Build with Visual Studio 2019 Community edition. Tested (very cursory) under Visual Studio 2019 Community only.
+Built with Visual Studio 2019 Community edition. Tested (very cursory) under Visual Studio 2019 Community only.
 
 Inspired by:
 
