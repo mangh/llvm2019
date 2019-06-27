@@ -7,5 +7,6 @@ Build with Visual Studio 2019 Community edition. Tested (very cursory) under Vis
 
 Inspired by:
 
+* [LLVM Compiler Toolchain extension @ Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=LLVMExtensions.llvm-toolchain)
 * [Bug 42290 - LLVM Compiler Toolchain extension does not support Visual Studio 2019](https://bugs.llvm.org/show_bug.cgi?id=42290)
 * [Microsoft/PTVS Build error: The specified InstallRoot value of 'VCTargets' is invalid for item #5243](https://github.com/Microsoft/PTVS/issues/5243)
