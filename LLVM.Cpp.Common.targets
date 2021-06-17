@@ -9,6 +9,9 @@
          that the user may have overridden in the UI. -->
     <CLToolExe Condition="$(UseClangCl)">$(ClangClExecutable)</CLToolExe>
     <LinkToolExe Condition="$(UseLldLink)">$(LldLinkExecutable)</LinkToolExe>
+    <_ClExternalIncludesSupported>false</_ClExternalIncludesSupported>
+    <_LinkILKSupported>false</_LinkILKSupported>
+    <_LinkLTCGOUTSupported>false</_LinkLTCGOUTSupported>
   </PropertyGroup>
 
   <ItemGroup>
@@ -124,8 +127,8 @@
         <!-- We can't just unset BasicRuntimeChecks, as that will pass /RTCu to the compiler.
              We have to explicitly set it to 'Default' to avoid passing anything. -->
         <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+        <_ClExternalIncludesSupported>false</_ClExternalIncludesSupported>
       </ClCompile>
     </ItemGroup>
   </Target>
-
 </Project>
