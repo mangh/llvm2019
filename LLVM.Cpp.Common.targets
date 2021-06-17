@@ -9,6 +9,9 @@
          that the user may have overridden in the UI. -->
     <CLToolExe Condition="$(UseClangCl)">$(ClangClExecutable)</CLToolExe>
     <LinkToolExe Condition="$(UseLldLink)">$(LldLinkExecutable)</LinkToolExe>
+    <_ClExternalIncludesSupported>false</_ClExternalIncludesSupported>
+    <_LinkILKSupported>false</_LinkILKSupported>
+    <_LinkLTCGOUTSupported>false</_LinkLTCGOUTSupported>
   </PropertyGroup>
 
   <ItemGroup>
@@ -127,5 +130,4 @@
       </ClCompile>
     </ItemGroup>
   </Target>
-
 </Project>
